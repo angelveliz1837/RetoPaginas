@@ -5,212 +5,33 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: hsl(221, 100%, 96%);
-    font-family: "Hanken Grotesk", serif;
-    font-size: 18px;
+    background-color: hsl(212, 45%, 89%);
+    font-family: "Outfit", sans-serif;
+    font-size: 15px;
 }
-.cuadro_general{
+
+.cuadro{
     background: hsl(0, 0%, 100%);
-    display: flex;
-    flex-direction: row;
-    max-width: 700px;
-    justify-content: space-between;
-    border-radius: 20px;
-}
-
-.cuadro1{
-    background: linear-gradient(
-        to bottom,
-        hsla(241, 72%, 46%, 0),
-        hsla(256, 72%, 46%, 1)
-    );
-    border-radius: 20px;
     text-align: center;
-    padding: 25px;
-    flex: 1;
+    border-radius: 10px;
+    max-width: 200px;
+    margin-left: 0px;
 }
 
-    .titulo1{
-        color: hsl(241, 100%, 89%);
-        font-size: 22px;
-        font-weight: 800;
-    }
-
-    .circulo{
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-        background: linear-gradient(
-            to top,
-            hsla(241, 72%, 46%, 0),
-            hsla(256, 72%, 46%, 1)
-        );
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 20px auto;
-    }
-
-        .circulo .numero, .circulo .subnumero{
-            margin: 0px;
-        }
-
-            .numero{
-                font-size: 80px;
-                font-weight: 800;
-                color: hsl(0, 0%, 100%);
-            }
-
-            .subnumero{
-                color: hsl(241, 100%, 89%);
-            }
-
-        .subtitulo{
-            color: hsl(0, 0%, 100%);
-            margin: 0px;
-        }
-
-        .texto{
-            color: hsl(241, 100%, 89%);
-            margin: 20px 20px 10px 20px;
-            padding: 10px;
-            font-size: 16px;
-        }
-
-
-.cuadro2{
+.imagen_qr{
+    margin-top: 10px;
     text-align: center;
-    padding: 20px;
-    flex: 1;
+    max-width: 180px;
+    border-radius: 10px;
 }
 
-    .titulo2{
-        font-size: 22px;
-        margin-top: 20px;
-        text-align: start;
-        padding-left: 10px;
+.titulo{
+    margin: 10px 15px;
+    font-size: 15px;
+}
 
-    }
-
-    .lista{
-        list-style-type: none;
-        padding: 0px;
-    }
-
-    .lista li{
-        text-decoration: none;
-        display: flex;
-        flex-direction: row;
-        margin-bottom: 15px;
-    }
-
-    .lista_rojo, .lista_amarillo, .lista_verde, .lista_azul{
-        border-radius: 10px;
-        display: flex;
-        flex-direction: row;
-        padding-left: 20px;
-    }
-
-        .rojo, .amarillo, .verde, .azul{
-            display: flex;
-            flex-direction: row;
-            width: 50%;
-        }
-
-            .rojo p, .amarillo p, .verde p, .azul p{
-                padding-left: 10px;
-            }
-
-    .lista_rojo{
-        background: hsl(0, 100%, 67%, 0.1);
-    }
-
-        .rojo{
-            color: hsl(0, 100%, 67%);
-        }
-
-    .lista_amarillo{
-        background: hsl(39, 100%, 56%, 0.1);
-    }
-
-        .amarillo{
-            color: hsl(39, 100%, 56%);
-        }
-
-    .lista_verde{
-        background: hsl(166, 100%, 37%, 0.1);
-    }
-
-        .verde{
-            color: hsl(166, 100%, 37%);
-        }
-
-    .lista_azul{
-        background: hsl(234, 85%, 45%, 0.1);
-    }
-
-        .azul{
-            color: hsl(234, 85%, 45%);
-        }
-
-    .negro_gris{
-        display: flex;
-        flex-direction: row;
-        width: 50%;
-    }
-
-    .lista_rojo > .negro_gris,
-    .lista_amarillo > .negro_gris,
-    .lista_verde > .negro_gris,
-    .lista_azul > .negro_gris{
-        justify-content: end;
-        text-align: end;
-    }
-
-        .negro{
-            color: black;
-            font-weight: bold;
-            padding-right: 10px;
-        }
-
-        .gris{
-            color: hsl(241, 100%, 89%);
-            padding-right: 20px;
-        }
-
-    button{
-        text-decoration: none;
-        background-color: hsl(224, 30%, 27%);
-        border: hsl(224, 30%, 27%);
-        color: hsl(0, 0%, 100%);
-        margin-top: 20px;
-        padding: 15px 130px;
-        border-radius: 40px;
-    }
-
-    button:hover{
-        background:hsla(256, 72%, 46%, 1);
-        border: hsla(256, 72%, 46%, 1);
-    }
-
-@media screen and (max-width: 375px){
-    .cuadro_general{
-        display: flex;
-        flex-direction: column;
-    }
-    
-        .titulo1{
-            margin-top: 40px;
-        }
-
-        .circulo{
-            width: 150px;
-            height: 150px;
-        }
-
-        .texto{
-            margin: 0px 20px 10px 20px;
-        }
-
+.texto{
+    font-size: 10px;
+    color: hsl(216, 15%, 48%);
+    padding: 0px 15px 15px 10px;
 }
