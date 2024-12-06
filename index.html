@@ -1,34 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Social links profile</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | NFT preview card component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
-
-  Jessica Randall
-  London, United Kingdom
-  "Front-end developer and avid reader."
-
-  GitHub
-  Frontend Mentor
-  LinkedIn
-  Twitter
-  Instagram
-  
+  <div class="envoltura">
+    <section class="flex-container">
+      <div class="caja c0">
+        <img class="imagen" src="images/image-equilibrium.jpg">
+      </div>
+      <div class="caja">
+        <h1 class="titulo titulo_blanco">Equilibrium #3429</h1>
+        <p class="texto">Our Equilibrium collection promotes balance and calm.</p>
+      </div>
+      <div class="caja c1">
+        <div class="cuadro1"><img src="./images/icon-ethereum.svg"></div>
+        <div class="cuadro2">0.041 ETH</div>
+        <div class="cuadro3"><img src="./images/icon-clock.svg"></div>
+        <div class="cuadro4">3 days left</div>
+      </div>
+      <hr>
+      <div class="caja c2">
+        <div class="icono"><img src="./images/image-avatar.png"></div>
+        <div class="texto2">Creation of <span class="titulo_blanco">Jules Wyvern</span></div>
+      </div>
+    </section>
+  </div>
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U/hub"
+      target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/angelveliz1837">Angel Veliz</a>.
   </div>
 </body>
+
 </html>

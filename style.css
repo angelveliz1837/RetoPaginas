@@ -1,0 +1,169 @@
+body{
+    background: hsl(217, 54%, 11%);
+    width: 1440px;
+}
+
+.envoltura{
+    max-width: 23%;
+    margin: 70px auto;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 13px 17px 38px hsl(219, 70%, 15%);
+    -moz-box-shadow: 0px 13px 17px 38px hsl(219, 70%, 15%);
+    box-shadow: 0px 13px 17px 38px hsl(219, 70%, 15%);
+}
+
+
+.flex-container{
+    background: hsl(216, 50%, 16%);
+    border: 1px solid black;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-family: "Outfit", sans-serif;
+    font-size: 18px;
+    border-radius: 10px;
+    color: hsl(215, 32%, 27%);
+    -webkit-box-shadow: 0px 12px 11px 5px hsl(216, 83%, 5%);
+    -moz-box-shadow: 0px 12px 11px 5px hsl(216, 83%, 5%);
+    box-shadow: 0px 12px 11px 5px hsl(216, 83%, 5%);
+}
+
+
+.caja{
+    width: 100%;
+    text-align: center;
+    text-align: start;
+}
+
+    .caja img{
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .caja .titulo{
+        color: hsl(0, 0%, 100%);
+        font-size: 20px;
+    }
+
+    .caja .texto{
+        font-size: 18px;
+    }
+
+.c1, .c2{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    font-size: 16px;
+}
+
+    .c1 .cuadro1{
+        width: 3%;
+    }
+
+    .c1 .cuadro2{
+        padding-left: 10px;
+        color: hsl(178, 100%, 50%);
+        font-weight: bold;
+    }
+
+    .c1 .cuadro3{
+        padding-left: 85px;
+    }
+
+    .c1 .cuadro4{
+        padding-left: 10px;
+        color: hsl(215, 51%, 70%);
+    }
+
+    .c2 img{
+        border: 1px solid hsl(0, 0%, 100%);
+        border-radius: 50%;
+        width: 20%;
+    }
+
+    .c2 .icono{
+        display: inline;
+        margin-right: -90px;
+    }
+
+    .c2 .texto2{
+        align-content: center;
+    }
+
+    .titulo_blanco{
+        color: hsl(0, 0%, 100%);;
+    }
+
+    .titulo_blanco:hover{
+        color: hsl(178, 100%, 50%);
+    }
+
+    .c0 {
+        position: relative; /* Necesario para posicionar los pseudo-elementos */
+        width: 100%; /* Asegura que ocupe el ancho del contenedor */
+        border-radius: 10px; /* Opcional: redondea los bordes */
+        overflow: hidden; /* Evita que los pseudo-elementos se salgan */
+      }
+      
+      .imagen {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      
+      /* Fondo de color que aparece al hacer hover */
+      .c0::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: hsl(178, 100%, 50%);
+        opacity: 0; /* Inicialmente invisible */
+        transition: opacity 0.3s ease; /* Animación suave */
+        z-index: 1; /* Asegura que esté sobre la imagen */
+      }
+      
+      /* Muestra el fondo al hacer hover */
+      .c0:hover::after {
+        opacity: 0.7; /* Ajusta la transparencia según prefieras */
+      }
+      
+      /* Icono que aparece centrado */
+      .c0::before {
+        content: url('./images/icon-view.svg'); /* Ruta al icono */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0; /* Inicialmente invisible */
+        transition: opacity 0.3s ease; /* Animación suave */
+        z-index: 2; /* Asegura que el icono esté sobre el fondo */
+      }
+      
+      /* Muestra el icono al hacer hover */
+      .c0:hover::before {
+        opacity: 1;
+      }
+      
+
+hr{
+    width: 100%;
+    margin: 15px 0px;
+    opacity: 0.2;
+}
+
+
+@media screen and (max-width: 1200px){
+
+    body{
+        width: 375px;
+    }
+
+    .envoltura{
+        max-width: 335px;
+    }
+}
