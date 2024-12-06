@@ -1,235 +1,127 @@
 body{
-    background: hsl(30, 54%, 90%);
+    background: hsl(47, 88%, 63%);
     width: 1440px;
 }
 
-.cuadro_general{
-    background: hsl(0, 0%, 100%);
-    max-width: 50%;
-    margin: 5em auto;
-    padding: 35px;
+.flex-container{
+    max-width: 40%;
+    background: white;
+    border: 1px solid black;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    align-content:center;
-    font-size: 1em;
+    align-content: center;
+    margin: 100px auto;
+    padding: 20px;
+    font-family: "Figtree", sans-serif;
     border-radius: 20px;
+    font-size: 16px;
+    box-shadow:
+    inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    10px 10px 0 0px rgb(0, 0, 0),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
 
 .caja{
     width: 100%;
-    text-align: center;
+    height: 100%;
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
 }
 
     .caja img{
-        display: block;
-        width: calc(100% - 20px);
-        padding: 10px;
-        border-radius: 20px;
+        width: 100%;
+        border-radius: 10px;
     }
 
-    .caja .titulo_general{
-        text-align: start;
-        padding-left: 10px;
-        font-family: "Young Serif", serif;
+    .boton{
+        display:inline;
+        text-align: center;
+        background: hsl(47, 88%, 63%);
+        border-radius: 10px;
+        margin: 25px 450px 25px 0px;
+        font-weight: bold;
+        padding: 10px 0px;
+        font-size: 1.3em;
+    }
+
+    .caja .titulo{
         font-size: 2.5em;
-        margin-bottom: 0px;
     }
 
-    .caja .texto{
-        text-align: start;
-        padding: 0px 10px;
-        font-family: "Young Serif", serif;
-        font-weight: lighter;
-        font-size: 15px;
-        color: hsl(30, 10%, 34%);
+    .caja .texto1, .caja .texto2{
+        padding: 0px;
+        margin: 0px;
     }
 
-.caja_rojo{
-    background: hsl(330, 100%, 98%);
-    border: none;
-    border-radius: 20px;
-    margin: 1em 0px;
-}
-
-    .caja_rojo .subtitulo_rojo{
-        color: hsl(332, 51%, 32%);
-        text-align: start;
-        padding-left: 20px;
-        font-family: "Outfit", serif;
-        font-size: 24px;
+    .caja .texto1{
+        color: hsl(0, 0%, 7%);
+        font-size: 1.4em;
     }
-
-    .caja_rojo ul{
-        text-align: start;
-        margin-left: -5px;
-    }
-
-        .caja_rojo li{
-            margin-left: 10px;
-            margin-bottom: 10px;
-            padding-left: 15px;
-            padding-right: -5px;
-            font-family: "Outfit", serif;
-            font-size: 16px;
-        }   
-
-        .caja_rojo li::marker{
-            color: hsl(332, 51%, 32%);
-        }
-
-    .caja .subtitulo{
-        text-align: start;
-        color: hsl(14, 45%, 36%);
-        font-size: 30px;
-        margin: 10px 0px;
-    }
-
-        .caja ul, .caja ol{
-            text-align: start;
-            text-align: justify;
-        }
-
-            .caja li{
-                margin-left: -1em;
-                padding-left: 16px;
-                padding-bottom: 10px;
-                padding-right: 50px;
-                color: hsl(30, 10%, 34%);
-                font-family: "Outfit", serif;
-                font-size: 17px;
-            }
-
-            .caja li::marker{
-                color: hsl(14, 45%, 36%);
-                font-weight: bold;
-            }
 
     .caja .texto2{
-        text-align: start;
-        color: hsl(30, 10%, 34%);
-        font-family: "Outfit", serif;
-        font-size: 17px;
+        color: hsl(0, 0%, 42%);
+        font-size: 1.6em;
+        padding-bottom: 40px;
     }
 
-    .tabla{
+    .c1{
         display: flex;
         flex-flow: row wrap;
-        justify-content: center;
-        
+        align-items: center;
     }
 
-        .celda{
-            width: 46%;
-            margin: 10px 0px;
-            padding-bottom: 10px;
-            text-align: start;
-            border-bottom: 1px solid hsl(30, 18%, 87%);
-            font-family: "Outfit", serif;
-        }
+    .c1 .icono{
+        width: 10%;
+    }
 
-        .c1{
-            color: hsl(30, 10%, 34%);
-            padding-left: 28px;
-        }
+    .c1 .texto3{
+        padding-left: 20px;
+        font-weight: bold;
+        font-size: 1.2em;
+    }
 
-        .c2{
-            color: hsl(14, 45%, 36%);
-            font-weight: bold;
-            padding-right: 28px;
-        }
-
-            .subc1, .subc2{
-                border-bottom: 1px solid white;
-            }
-
-hr{
-    margin: 0px 0px 1em 0px; 
-    opacity: 0.4;
-    width: 100%;
-}
-
-@media screen and (max-width: 500px){
-
+@media screen and (max-width: 550px){
     body{
-        padding: 0px;
-        margin: 0px;
-        width: 375px;
+        width: 315px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        padding-left: 20px;
     }
 
-    .cuadro_general{
-        margin: 0px;
-        padding: 0px;
-        max-width: 100%;
-        border-radius: 0px;
+    .flex-container{
+        max-width: 315px;
     }
 
     .caja{
-        margin-bottom: 1em;
+        width: 100%;
     }
 
-        .caja img{
-            width: 100%;
-            padding: 0px;
-            margin: 0px;
-            border-radius: 0px;
+        .boton{
+            margin: 25px 190px 25px 0px;
+            font-size: 1em;
         }
 
-        .caja .titulo_general{
-            padding: 0px 25px;
-            font-weight: 100;
-            font-size: 38px;
+        .caja .texto1{
+            font-size: 0.87em;
         }
 
-        .caja .texto{
-            padding: 0px 25px;
+        .caja .titulo{
+            font-size: 1.4em;
         }
 
-    .caja_rojo{
-        margin: 0.5em 15px 10px 15px;
-
-    }
-
-        .caja_rojo .subtitulo_rojo{
-            padding: 0px 25px;
-            font-size: 20px;
+        .caja .texto2{
+            font-size: 1.03em;
+            padding-bottom: 30px;
         }
 
-        .caja_rojo li{
-            padding-right: 60px;
+        .c1 .texto3{
+            font-size: 1em;
         }
 
-        .caja .subtitulo{
-            padding: 0px 25px;
-        }
 
-        .caja ul, .caja ol{
-            margin-left: 20px;
-            text-align: start;
-            margin-right: 0px;
-            
-        }
-
-            .caja li{
-                font-size: 1em;
-               
-            }
-
-            .caja ol li{
-                font-size: 1.1em;
-                padding-right: 16px;
-            }
-
-    .caja .texto2{
-        padding: 0px 25px;
-    }
-
-    .tabla{
-        margin-right: 10px;
-    }
-
-    .celda{
-        width: 38%;
-    }
-    
 }
